@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+     <div class="container-fluid">
+         <div class="row upperheader">
+            <div class="col-sm-3" style="font-family:Monotype Corsiva;font-size:20px;">
+                <span class="fa fa-phone" >&emsp;</span>call us on:<span>+8138761456</span>
+            </div>
+            <div class="col-sm-6"style="font-family:Monotype Corsiva;font-size:20px;">
+               Techno Trends-("Experts Are Beyond The Limit.")
+            </div>
+            <div class="col-sm-3"><span style="font-family:Monotype Corsiva;font-size:20px;"> Connect on:&nbsp;</span>
+               <a href="https://www.facebook.com" target="_blank"> <span class="fa fa-facebook ">&emsp;&emsp;</span></a>
+                <a href="https://www.instagram.com" target="_blank"><span class="fa fa-instagram">&emsp;&emsp;</span></a>
+                <a href="https://twitter.com" target="_blank"><span class="fa fa-twitter">&emsp;&emsp;</span></a>
+                <a href="https://www.google.com" target="_blank"><span class="fa fa-google">&emsp;&emsp;</span></a>
+            </div>
+            </div>
+  
+        <div class="row lowerheader" style="background-color:whitesmoke">
+            <div class="col-sm-3 w-100 ">
+                <img src="img/techno1.png" style="height:50px;"/>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-7  " style="text-align:right">
+                <nav class="navbar navbar-expand-lg navbar-lime ">
+ 
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav nav-pills navbar-nav mr-auto nav-pills">
+        <li class=" nav-item">
+             <a class="nav-link fa fa-home" href="homeWC.aspx"style="font-family:Monotype Corsiva;font-size:20px;">&ensp;Home&ensp;<span class="sr-only">(current)</span></a>
+        </li>
+      <li class="nav-item active">
+        <a class="nav-link  fa fa-info-circle" href="aboutusWC.aspx"style="font-family:Monotype Corsiva;font-size:20px;">&ensp;About US&ensp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-phone" href="contactus.aspx"style="font-family:Monotype Corsiva;font-size:20px;">&ensp;Contact Us&ensp;</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle  fa fa-cog" href="ServicesWC.aspx" id="navbarDropdown" role="button" data-toggle="dropdown"style="font-family:Monotype Corsiva;font-size:20px;" >
+         &ensp;Services&ensp; </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="webdevelopmentWC.aspx"style="font-family:Monotype Corsiva;font-size:20px;">Web Development</a>
+          <a class="dropdown-item" href="summertrainingWC.aspx"style="font-family:Monotype Corsiva;font-size:20px;">Summer Training</a>
+          <a class="dropdown-item" href="aprentshipWC.aspx"style="font-family:Monotype Corsiva;font-size:20px;">Apprentship</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-picture-o " href="GalleryWC.aspx" style="font-family:Monotype Corsiva;font-size:20px;">&ensp;Gallery&ensp;</a>
+      </li> 
+         <li class="nav-item">
+        <a class="nav-link fa fa-user" href="registrationWC.aspx" style="font-family:Monotype Corsiva;font-size:20px;">&ensp;Registration&ensp;</a>
+      </li> 
+         <li class="nav-item">
+        <a class="nav-link fa fa-sign-in" href="loginWC.aspx" style="font-family:Monotype Corsiva;font-size:20px;">&ensp;Login</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+            </div>
+           
+            </div>
+     <div class="row bg-dark" style="height:1px;"></div>
+   </div>
+   
+   <%-- do not touch --%>   
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+     <%-- do not touch --%>   
+
+     <%-- Footer part --%>
+         <div class="row bg-dark text-white">
+             <div class="col-sm-5 upperfooter">
+                 <h4 class="mt-5 " style="text-align:center;font-family:Monotype Corsiva;font-size:45px;">About Techno Trends-</h4>
+                 <br />
+                 <p class="text-justify text-center"style="font-family:Monotype Corsiva;font-size:20px;">Techno Trends-:Codders Adda is the process of tutoring in an online, virtual environment or networked environment in which Tutors and learners are separated by time and space.</p>
+                 <p class="text-justify text-center"style="font-family:Monotype Corsiva;font-size:20px;">Here all  the tutors are the web developers.If you give your 40% we will give you our 100%.Our company is verified by the government.You can check it on google.</p>
+                   <br /> 
+                  </div>
+             
+              <div class="col-sm-3 mt-5">
+                  <h4 class="text-center" style="font-family:Monotype Corsiva;font-size:45px;">Useful Links</h4>
+                   <br />
+                   <ul class="text-light" style="font-size:20px;">
+                       <li><a href="homeWC.aspx" target="_blank" style="font-family:Monotype Corsiva;font-size:20px;font-weight:bold;">Techno Coders</a></li>
+                      <li><a href="aboutusWC.aspx" target="_blank" style="font-family:Monotype Corsiva;font-size:20px;font-weight:bold;">Techno Trends-</a></li>
+                       <li><a href="homeWC.aspx" target="_blank" style="font-family:Monotype Corsiva;font-size:20px;font-weight:bold;">Techno Design</a></li>
+                   </ul>
+                   <br />
+             </div>
+             
+              <div class="col-sm-4 mt-5">
+                     <h4 style="font-family:Monotype Corsiva;font-size:45px;">Contact US</h4>
+                   <br />
+                   <p style="font-family:Monotype Corsiva;font-size:20px;">T1-primises 2nd Floor A-29, Above ICICI Bank,<br /> Nirala Nagar, Lucknow, UP 226020.</p>
+                  <p>Call Us: 8081333073,9775778676</p>
+                   <p>Email: akku123@gmail.com</p>
+                   <br />
+             </div>
+            
+
+         </div>
+  <div class="row">
+      <div class="col-sm-12 bg-white" style="height:3px"></div>
+
+  </div>
+ <div class="row bg-dark text-white ">
+            <div class="col-sm-8 text-left ">
+    <p style="font-family:Monotype Corsiva;font-size:20px;line-height:50px;"> &copy; COPYRIGHTS & POWERD BY- Techno Trends- TECHNOLOGIES PVT. LTD.</p>
+            </div>
+            <div class="col-sm-4 text-right ">
+                <a href="adminlogin.aspx" style="font-family:Monotype Corsiva;font-size:20px;line-height:50px;">Admin</a>
+            </div>
+      
+        </div>
+ <%-- Footer part --%>
+    </form>
+</body>
+</html>
